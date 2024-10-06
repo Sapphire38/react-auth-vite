@@ -4,8 +4,6 @@ import Home from "./components/Home";
 import Profile from "./components/Profile";
 import "./App.css";
 
-const { Header, Content, Footer } = Layout;
-
 function App() {
   const menuItems = [
     { key: "1", label: <Link to="/">Home</Link> },
@@ -14,11 +12,14 @@ function App() {
 
   return (
     <div style={{ padding: "0" }}>
-      <div className="site-layout-content ">
-        <div></div>
-        
-        <Routes>
+      <div className=" ">
+        <div className="flex flex-col gap-2">
           
+          <Link to="/">Hola</Link>
+          <Link to="/profile">Profile</Link>
+        </div>
+
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
