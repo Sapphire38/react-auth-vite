@@ -14,9 +14,7 @@ function Profile() {
   return (
     isAuthenticated && (
       <div>
-        <Title level={2}>{user.name}</Title>
-        <img src={user.picture} alt={user.name} />
-        <Paragraph>{user.email}</Paragraph>
+        
       </div>
     )
   )
