@@ -49,90 +49,6 @@ function App() {
         },
       ],
     },
-    {
-      key: "sub2",
-      label: "Navigation Two",
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: "5",
-          label: "Option 5",
-        },
-        {
-          key: "6",
-          label: "Option 6",
-        },
-        {
-          key: "sub3",
-          label: "Submenu",
-          children: [
-            {
-              key: "7",
-              label: "Option 7",
-            },
-            {
-              key: "8",
-              label: "Option 8",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: "divider",
-    },
-    {
-      key: "sub4",
-      label: "Navigation Three",
-      icon: <SettingOutlined />,
-      children: [
-        {
-          key: "9",
-          label: "Option 9",
-        },
-        {
-          key: "10",
-          label: "Option 10",
-        },
-        {
-          key: "11",
-          label: "Option 11",
-        },
-        {
-          key: "12",
-          label: "Option 12",
-        },
-      ],
-    },
-    {
-      key: "sub5",
-      label: "Navigation Two",
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: "5",
-          label: "Option 5",
-        },
-        {
-          key: "6",
-          label: "Option 6",
-        },
-        {
-          key: "sub3",
-          label: "Submenu",
-          children: [
-            {
-              key: "7",
-              label: "Option 7",
-            },
-            {
-              key: "8",
-              label: "Option 8",
-            },
-          ],
-        },
-      ],
-    },
   ];
 
   const onClick = (e) => {
@@ -142,7 +58,7 @@ function App() {
   return (
     <div style={{ padding: "0" }}>
       <div className="flex w-screen h-screen overflow-hidden bg-neutral-900">
-        <div className="flex w-ful lg:w-1/5 h-screen overflow-y-scroll scrollbar">
+        <div className="flex w-ful lg:w-1/5 h-screen ">
           <Menu
             onClick={onClick}
             style={{
@@ -156,7 +72,6 @@ function App() {
           />
         </div>
         <div className="flex w-4/5">
-      
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
